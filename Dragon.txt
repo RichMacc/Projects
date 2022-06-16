@@ -1,0 +1,15 @@
+import random
+safeRoom = random.randint(1,2)
+# print ("Safe Room ", safeRoom)
+roomChoice = 0
+roomChoice = int(input("A dragon has found you in it's lair.  Choose 1 to hide in the dragon's hoard or choose 2 to attempt an escape: "))
+if roomChoice < 1 or roomChoice > 2:
+    print ("Your hesitation has made you an easy target.")
+if roomChoice == 1:
+    print ("You chose to hide in the dragon's hoard.")
+if roomChoice == 2:
+    print ("You chose to attempt an escape.")
+if roomChoice == safeRoom:
+    print ("You have escaped the dragon's notice.")
+else:
+    print ("You have been discovered.  The dragon devours you.") 
